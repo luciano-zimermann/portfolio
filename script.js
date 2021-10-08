@@ -22,7 +22,7 @@ function updatePrice(){
     let price = qtde * 100;
     if (hasJs) price *= 1.1;
     if (includesLayout) price += 500;
-    if (notIncludesLayout && price > 0) price -= 500; 
+    if (notIncludesLayout && price > 500) price -= 500; 
     let urgency = 1 - deadline * 0.1;
     price *= 1 + urgency;
 
